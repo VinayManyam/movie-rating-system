@@ -19,8 +19,8 @@ $ci->load->library('email');
 $config['protocol'] = "smtp";
 $config['smtp_host'] = "ssl://smtp.gmail.com";
 $config['smtp_port'] = "465";
-$config['smtp_user'] = "edmin541@gmail.com"; 
-$config['smtp_pass'] = "Adminh7541"; 
+$config['smtp_user'] = "mail"; 
+$config['smtp_pass'] = "password"; 
 $config['charset'] = "utf-8";
 $config['mailtype'] = "html";
 $config['newline'] = "\r\n";
@@ -28,7 +28,7 @@ $config['newline'] = "\r\n";
 $ci->email->initialize($config);
 
 $ci->email->from('replay@gmail.com', 'Blabla');
-$ci->email->to('vinayip541@gmail.com');
+$ci->email->to('sender mail');
 $ci->email->subject('This is an email test');
 $ci->email->message('hithis is email testing 2 <br> <font align="center" color="green">please confrom your email</font><img src="https://yt3.ggpht.com/-PJRROvsJXks/AAAAAAAAAAI/AAAAAAAAAAA/OuEMOeS1U8s/s900-c-k-no-mo-rj-c0xffffff/photo.jpg">');
 
